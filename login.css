@@ -1,0 +1,95 @@
+/* Deze code wordt gebruikt voor mijn MKB-Project. Het is gelinkt aan mkbprojecthome.html
+!important = De code MOET hoe dan ook zichzelf laten zien in de code. */
+
+body {
+	font-family: "Open Sans", sans-serif; /* lettertype */
+	background: #fff; /*achtergrond kleur body*/
+	background-image: url(https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/35925292_2120474564646864_4818545812499857408_o.jpg?_nc_cat=0&oh=8368632105f31154972aad4a98d92296&oe=5BBB0280);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.header /* navigation bar */{
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.9); 
+	/*De header achtergrond wordt niet herhaald wanneer je scrollt. 
+	RGBA = Verschillende kleurwaarden, Het geeft een combinatie terug van opgegeven kleuren.*/
+	z-index: 1000;
+	transition: 220s;
+}
+
+.header ul {
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.header li {
+    float: left;
+}
+
+.header li .head {
+	color: #fff;
+	background: #001f3f;
+}
+
+.header li a {
+	display: block;
+    text-decoration: none;
+    padding: 16px;
+    color: #001f3f;
+    width: 80px;
+    text-align: center;
+
+}
+
+.header li a:hover /* select elements when you mouse over them. */ {
+	background: #001f3f;
+	color: #fff;
+	transition: 0.5s;
+
+}
+
+/* Stijl toevoegen aan de login container */
+.containerlogin {
+	margin: 0 auto;
+    width: 400px;
+    border: 3px;
+    padding: 16px;
+    position: absolute;
+    background-color: white;
+    opacity: 0.9;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 20px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #001f3f;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}

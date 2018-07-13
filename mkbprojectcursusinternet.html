@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CURSUS4U: Internet-cursus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+     /* Deze code wordt gebruikt voor mijn MKB-Project. Het is gelinkt aan mkbprojecthome.html
+!important = De code MOET hoe dan ook zichzelf laten zien in de code. */
+
+body {
+    font-family: "Open Sans", sans-serif; /* lettertype */
+    background: #fff; /*achtergrond kleur body*/
+}
+
+.header /* navigation bar */{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.9) !important; 
+    /*De header achtergrond wordt niet herhaald wanneer je scrollt. 
+    RGBA = Verschillende kleurwaarden, Het geeft een combinatie terug van opgegeven kleuren.*/
+    z-index: 1000;
+    transition: 220s;
+}
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header li {
+    float: left;
+}
+
+.header li .head {
+    color: #fff !important;
+    background: #001f3f;
+}
+
+.header li a {
+    display: block;
+    text-decoration: none;
+    padding: 16px;
+    color: #001f3f;
+    width: 80px;
+    text-align: center;
+
+}
+
+.header li a:hover /* select elements when you mouse over them. */ {
+    background: #001f3f;
+    color: #fff;
+    transition: 0.5s;
+
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 1000px;
+}   
+    </style>
+</head>
+<body>
+<nav class="header">
+<ul>
+            <li>
+                <a class="head" href="homepagina.html">Home</a>
+            </li>
+            <li>
+                <a href="cursusoverzicht.html">Cursus</a>
+            </li>
+            <li>
+                <a href="overhetbedrijf.html">Over ons</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+           <li style="float: right;"><a href="loginscherm.html"> Inloggen </a>
+            </li>
+        </ul>
+    </nav>
+<br><br><br><br><br><br>
+
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+</body>
+</html>
